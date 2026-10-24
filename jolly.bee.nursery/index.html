@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf0">
+  <meta name="description" content="Jolly Bee Nursery - حضانة جولي بي، بيئة تعليمية ممتعة وآمنة للأطفال في طبربور، بجانب جامعة العلوم الإسلامية.">
+  <title>Jolly Bee Nursery | حضانة جولي بي 🐝</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../CSS/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="../JS/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-bee">🐝</div>
+    <h2>Jolly Bee</h2>
+    <p>عالم صغير مليء بالفرح!</p>
+    <div class="loader-track"><span></span></div>
+  </div>
+
+  <!-- Floating Decorations -->
+  <div class="floating-decoration flower flower-one">✿</div>
+  <div class="floating-decoration flower flower-two">✿</div>
+  <div class="floating-decoration star star-one">✦</div>
+  <div class="floating-decoration star star-two">✧</div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="brand" aria-label="Jolly Bee الرئيسية">
+      <span class="brand-icon">🐝</span>
+      <span class="brand-text">
+        <strong>Jolly Bee</strong>
+        <small>حضانة جولي بي</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="فتح القائمة" aria-expanded="false"
+      aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">من نحن</a>
+      <a href="#activities">أنشطتنا</a>
+      <a href="#gallery">معرضنا</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <a class="nav-cta" href="https://www.instagram.com/jolly.bee.nursery/"
+      target="_blank" rel="noopener noreferrer">
+      اكتشف عالمنا <span>↗</span>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="hero-background"></div>
+
+      <div class="hero-content">
+        <div class="eyebrow hero-eyebrow">
+          <span class="eyebrow-bee">🐝</span>
+          أهلاً بكم في عالم جولي بي
+        </div>
+
+        <h1 class="hero-title">
+          بداية صغيرة...
+          <span class="highlight-word">لمستقبل كبير!</span>
+        </h1>
+
+        <p class="hero-description">
+          في حضانة جولي بي، كل يوم مغامرة جديدة، وكل ابتسامة حكاية،
+          وكل طفل عنده عالم من الأحلام بنساعده يكتشفه.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#about" class="button button-primary">
+            اكتشف حضانتنا <span>←</span>
+          </a>
+          <a href="https://wa.me/962796897303"
+            class="button button-secondary"
+            target="_blank" rel="noopener noreferrer">
+            <span>💬</span> تواصل معنا
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="note-icon">💛</span>
+          <span>نتعلم، نلعب، نكبر معًا</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="عالم طفولي مرح">
+        <div class="art-glow"></div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="art-card art-card-back">
+          <span>🌈</span>
+          <p>Learn & Grow</p>
+        </div>
+
+        <div class="art-card art-card-main">
+          <div class="sun-face">☀️</div>
+          <div class="rainbow">🌈</div>
+          <div class="bee-character">🐝</div>
+          <div class="cloud cloud-left">☁️</div>
+          <div class="cloud cloud-right">☁️</div>
+          <div class="art-caption">
+            <span>✨</span> Happy Little Minds
+          </div>
+        </div>
+
+        <div class="art-card art-card-front">
+          <span>🎨</span>
+          <p>Let's Play!</p>
+        </div>
+
+        <div class="floating-emoji emoji-heart">💛</div>
+        <div class="floating-emoji emoji-star">⭐</div>
+        <div class="floating-emoji emoji-flower">🌼</div>
+        <div class="floating-emoji emoji-balloon">🎈</div>
+      </div>
+
+      <a href="#about" class="scroll-cue">
+        <span></span>
+        <small>اكتشف المزيد</small>
+      </a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-label="نتعلم ونلعب وننمو">
+      <div class="marquee-track">
+        <span>🐝 نتعلم بمرح</span><span>✦</span>
+        <span>🌈 نكتشف العالم</span><span>✦</span>
+        <span>🧸 نلعب معًا</span><span>✦</span>
+        <span>💛 نكبر بالحب</span><span>✦</span>
+        <span>🎨 نبدع كل يوم</span><span>✦</span>
+        <span>🐝 نتعلم بمرح</span><span>✦</span>
+        <span>🌈 نكتشف العالم</span><span>✦</span>
+        <span>🧸 نلعب معًا</span><span>✦</span>
+        <span>💛 نكبر بالحب</span><span>✦</span>
+        <span>🎨 نبدع كل يوم</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="section-heading reveal">
+        <span class="section-kicker">OUR LITTLE WORLD ✨</span>
+        <h2>كل طفل عنده <span>حكاية جميلة</span></h2>
+        <p>
+          نؤمن أن الطفولة أجمل رحلة، وأن اللعب والاكتشاف
+          وصناعة الذكريات هي جزء من كل يوم مميز.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-blob">
+            <span class="about-big-emoji">🧸</span>
+            <span class="about-mini mini-one">🌼</span>
+            <span class="about-mini mini-two">🖍️</span>
+            <span class="about-mini mini-three">💖</span>
+            <div class="about-sticker">Little<br>Dreamers!</div>
+          </div>
+          <div class="about-note">
+            <span>🌟</span>
+            <div>
+              <strong>كل يوم فرصة جديدة</strong>
+              <small>للتعلم واللعب والاكتشاف</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="mini-label">مرحبًا بكم في Jolly Bee</span>
+          <h3>مساحة صغيرة<br>لأحلام كبيرة 💛</h3>
+          <p>
+            حضانة جولي بي هي عالم مليء بالألوان والأنشطة والتجارب
+            الممتعة. نحرص على أن تكون رحلة الطفل مليئة بالفضول
+            والإبداع واللحظات الجميلة.
+          </p>
+          <p>
+            من اللعب الحركي إلى الأنشطة الفنية والجماعية،
+            نمنح الأطفال فرصًا للاستكشاف والتعبير عن أنفسهم
+            والتفاعل مع أصدقائهم.
+          </p>
+
+          <a href="#activities" class="text-link">
+            اكتشف أنشطتنا <span>←</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section class="activities section" id="activities">
+      <div class="section-heading reveal">
+        <span class="section-kicker">PLAY • LEARN • GROW</span>
+        <h2>كل يوم مغامرة <span>جديدة!</span></h2>
+        <p>نتعلم من خلال التجربة، ونكتشف مواهبنا، ونصنع أجمل الذكريات.</p>
+      </div>
+
+      <div class="activity-grid">
+        <article class="activity-card activity-yellow reveal">
+          <div class="activity-icon">🎨</div>
+          <span class="activity-number">01</span>
+          <h3>الفن والإبداع</h3>
+          <p>ألوان ورسومات وأفكار صغيرة تتحول إلى إبداعات جميلة.</p>
+          <span class="card-decoration">✦</span>
+        </article>
+
+        <article class="activity-card activity-pink reveal">
+          <div class="activity-icon">🏃</div>
+          <span class="activity-number">02</span>
+          <h3>اللعب الحركي</h3>
+          <p>أنشطة حركية ممتعة تساعد الأطفال على الحركة والتفاعل.</p>
+          <span class="card-decoration">✦</span>
+        </article>
+
+        <article class="activity-card activity-blue reveal">
+          <div class="activity-icon">🧩</div>
+          <span class="activity-number">03</span>
+          <h3>التعلم والاكتشاف</h3>
+          <p>نتعرف على أشياء جديدة من خلال اللعب والتجربة والاستكشاف.</p>
+          <span class="card-decoration">✦</span>
+        </article>
+
+        <article class="activity-card activity-green reveal">
+          <div class="activity-icon">🤝</div>
+          <span class="activity-number">04</span>
+          <h3>اللعب الجماعي</h3>
+          <p>نتشارك اللعب ونصنع لحظات جميلة مع أصدقائنا.</p>
+          <span class="card-decoration">✦</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Video Gallery -->
+    <section class="gallery section" id="gallery">
+      <div class="section-heading reveal">
+        <span class="section-kicker">LITTLE MOMENTS, BIG MEMORIES 📸</span>
+        <h2>لحظات من <span>عالمنا الجميل</span></h2>
+        <p>شاهدوا بعض اللحظات والأنشطة من عالم Jolly Bee.</p>
+      </div>
+
+      <div class="gallery-grid">
+      <article class="video-card video-card-large">
+          <div class="video-frame">
+            <video src="/Videos/1.mp4" controls muted playsinline
+              preload="metadata" poster="" aria-label="فيديو من حضانة جولي بي"></video>
+            <span class="video-tag">🐝 يوميات جولي بي</span>
+          </div>
+          <div class="video-caption">
+            <span>01 / LITTLE MOMENTS</span>
+            <h3>لحظات لا تُنسى</h3>
+          </div>
+        </article>
+        <article class="video-card">
+          <div class="video-frame">
+            <video src="/Videos/2.mp4" controls muted playsinline
+              preload="metadata" aria-label="فيديو أنشطة الأطفال"></video>
+            <span class="video-tag">🎨 إبداع ومرح</span>
+          </div>
+          <div class="video-caption">
+            <span>02 / CREATIVE TIME</span>
+            <h3>نتعلم ونبدع</h3>
+          </div>
+        </article>
+         <article class="video-card">
+          <div class="video-frame">
+            <video src="/Videos/3.mp4" controls muted playsinline
+              preload="metadata" aria-label="فيديو اللعب والتعلم"></video>
+            <span class="video-tag">🌈 وقت المغامرة</span>
+          </div>
+          <div class="video-caption">
+            <span>03 / PLAY TIME</span>
+            <h3>اللعب والاكتشاف</h3>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <video src="/Videos/4.mp4" controls muted playsinline
+              preload="metadata" aria-label="فيديو من فعاليات الحضانة"></video>
+            <span class="video-tag">🧸 أصدقاء جولي بي</span>
+          </div>
+          <div class="video-caption">
+            <span>04 / OUR FRIENDS</span>
+            <h3>نلعب معًا</h3>
+          </div>
+        </article>
+
+        <article class="video-card ">
+          <div class="video-frame">
+            <video src="/Videos/5.mp4" controls muted playsinline
+              preload="metadata" aria-label="فيديو ذكريات جولي بي"></video>
+            <span class="video-tag">💛 ذكريات جميلة</span>
+          </div>
+          <div class="video-caption">
+            <span>05 / SWEET MEMORIES</span>
+            <h3>ذكريات من القلب</h3>
+          </div>
+        </article>
+      </div>
+
+      <div class="gallery-bottom reveal">
+        <p>المزيد من لحظاتنا الجميلة تجدونها على إنستغرام 🐝</p>
+        <a href="https://www.instagram.com/jolly.bee.nursery/"
+          target="_blank" rel="noopener noreferrer"
+          class="button button-primary">
+          تابعونا على Instagram <span>↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="contact-card reveal">
+        <div class="contact-decoration contact-decoration-one">🌼</div>
+        <div class="contact-decoration contact-decoration-two">🐝</div>
+
+        <div class="contact-content">
+          <span class="section-kicker">LET'S TALK 💛</span>
+          <h2>خلينا نبدأ <span>حكاية جميلة!</span></h2>
+          <p>
+            عندكم استفسار أو حابين تعرفوا أكثر عن حضانة جولي بي؟
+            تواصلوا معنا، ويسعدنا نحكي معكم.
+          </p>
+
+          <div class="contact-details">
+            <a class="contact-detail" href="tel:+962796897303">
+              <span class="detail-icon">📞</span>
+              <span>
+                <small>اتصلوا بنا</small>
+                <strong dir="ltr">079 689 7303</strong>
+              </span>
+            </a>
+
+            <a class="contact-detail"
+              href="https://www.google.com/maps/search/?api=1&query=Jolly+Bee+Nursery+Tabarbour+Amman+Jordan"
+              target="_blank" rel="noopener noreferrer">
+              <span class="detail-icon">📍</span>
+              <span>
+                <small>موقعنا</small>
+                <strong>طبربور، بجانب جامعة العلوم الإسلامية</strong>
+              </span>
+            </a>
+          </div>
+
+          <div class="contact-actions">
+            <a class="button whatsapp-button"
+              href="https://wa.me/962796897303"
+              target="_blank" rel="noopener noreferrer">
+              <span>💬</span> راسلنا على واتساب
+            </a>
+
+            <a class="button instagram-button"
+              href="https://www.instagram.com/jolly.bee.nursery/"
+              target="_blank" rel="noopener noreferrer">
+              <span>📸</span> Instagram
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-art" aria-hidden="true">
+          <div class="contact-art-circle">
+            <span>🐝</span>
+            <div>Jolly<br>Bee!</div>
+          </div>
+          <span class="contact-spark spark-a">✦</span>
+          <span class="contact-spark spark-b">✧</span>
+          <span class="contact-spark spark-c">💛</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#home" class="footer-brand">
+      <span>🐝</span> Jolly Bee Nursery
+    </a>
+    <p>صُنع بكل حب لعالم صغير مليء بالأحلام 💛</p>
+    <a href="https://www.instagram.com/jolly.bee.nursery/"
+      target="_blank" rel="noopener noreferrer"
+      class="footer-instagram">
+      تابعونا على إنستغرام ↗
+    </a>
+    <small>© <span id="currentYear"></span> Jolly Bee Nursery</small>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/962796897303"
+    class="floating-whatsapp"
+    target="_blank" rel="noopener noreferrer"
+    aria-label="تواصل معنا على واتساب">
+    <span>💬</span>
+    <span class="whatsapp-tooltip">احكِ معنا!</span>
+  </a>
+
+</body>
+</html>
